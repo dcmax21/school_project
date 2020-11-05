@@ -1,0 +1,113 @@
+
+<!-- saved from url=(0027)http://localhost:4567/index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>school web site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./school web site_files/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./school web site_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="./school web site_files/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="./school web site_files/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="./school web site_files/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./school web site_files/index.js"></script>
+    </head>
+
+    <body>
+        <div class="topnav">
+
+            <a class="active" href="http://localhost:4567/index">Home</a>
+
+            <a href="http://localhost:4567/games">Games</a>
+
+            <a href="http://localhost:4567/index#contact">Math</a>
+
+            <div class="topnav-right">
+
+                <a href="http://localhost:4567/contacts">Contacts</a>
+
+                <a href="http://localhost:4567/index#about">More comeing soon </a>
+            </div>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+            <a href="http://localhost:4567/index#">Logout</a>
+
+            <a href="https://www.abcya.com/">Abcya</a>
+
+            <a href="https://student.freckle.com/#/login">Freckle</a>
+
+            <a href="http://localhost:4567/help">Help</a>
+
+            <a href="http://localhost:4567/report_bug">Report bug</a>
+        </div>
+        
+        <span style="font-size:70px;cursor:pointer" onclick="openNav()">☰ </span>
+
+
+<div style="padding-left:16px">
+  
+  
+</div>
+        
+<button onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;" class="btn btn-sm btn-primary">Login</button>
+
+<div id="id01" class="modal" style="display: block;">
+   
+    <form class="modal-content animate" action="http://localhost:4567/sign_in" method="post">
+
+        <div class="imgcontainer">
+
+        <span onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" class="close" title="Close Modal">×</span>
+
+        <img src="./school web site_files/img_avatar2.png" alt="Avatar" class="avatar">
+
+        </div>
+    
+        <div class="container">
+
+        <label for="uname"><b>Username</b></label>
+
+        <input type="text" placeholder="Enter Username" name="uname" required="" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+    
+        <label for="psw"><b>Password</b></label>
+
+        <input type="password" placeholder="Enter Password" name="psw" required="" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+            
+        <button type="submit">Login</button>
+
+        <label>
+
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            <input type="checkbox" checked="checked" name="student"> Student
+            <input type="checkbox" checked="checked" name="teacher"> Teacher
+
+
+        </label>
+        
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+
+        <button type="button" onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" class="cancelbtn">Cancel</button>
+
+        <span class="psw">Forgot <a href="http://localhost:4567/index#">password?</a></span>
+
+        </div>
+
+    </form>
+
+</div>
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+    
+
+ 
+      </body></html>
